@@ -1,0 +1,50 @@
+﻿[
+    {
+        "type":  "Airplane",
+        "count":  25915
+    },
+    {
+        "type":  "Helicopter",
+        "count":  3250
+    },
+    {
+        "type":  "Glider",
+        "count":  434
+    },
+    {
+        "type":  "Unknown",
+        "count":  326
+    },
+    {
+        "type":  "Balloon",
+        "count":  196
+    },
+    {
+        "type":  "Weight Shift Control",
+        "count":  186
+    },
+    {
+        "type":  "Gyrocraft",
+        "count":  166
+    },
+    {
+        "type":  "Powered Parachute",
+        "count":  104
+    },
+    {
+        "type":  "Ultralight",
+        "count":  30
+    },
+    {
+        "type":  "Powered Lift",
+        "count":  8
+    },
+    {
+        "type":  "Blimp",
+        "count":  1
+    },
+    {
+        "type":  "Rocket",
+        "count":  1
+    }
+]

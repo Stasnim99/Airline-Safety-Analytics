@@ -1,0 +1,92 @@
+﻿[
+    {
+        "year":  2008,
+        "total":  1892,
+        "fatal":  382
+    },
+    {
+        "year":  2009,
+        "total":  1783,
+        "fatal":  359
+    },
+    {
+        "year":  2010,
+        "total":  1786,
+        "fatal":  363
+    },
+    {
+        "year":  2011,
+        "total":  1848,
+        "fatal":  398
+    },
+    {
+        "year":  2012,
+        "total":  1834,
+        "fatal":  389
+    },
+    {
+        "year":  2013,
+        "total":  1561,
+        "fatal":  344
+    },
+    {
+        "year":  2014,
+        "total":  1534,
+        "fatal":  360
+    },
+    {
+        "year":  2015,
+        "total":  1581,
+        "fatal":  365
+    },
+    {
+        "year":  2016,
+        "total":  1662,
+        "fatal":  341
+    },
+    {
+        "year":  2017,
+        "total":  1635,
+        "fatal":  338
+    },
+    {
+        "year":  2018,
+        "total":  1686,
+        "fatal":  360
+    },
+    {
+        "year":  2019,
+        "total":  1624,
+        "fatal":  380
+    },
+    {
+        "year":  2020,
+        "total":  1395,
+        "fatal":  291
+    },
+    {
+        "year":  2021,
+        "total":  1643,
+        "fatal":  321
+    },
+    {
+        "year":  2022,
+        "total":  1687,
+        "fatal":  329
+    },
+    {
+        "year":  2023,
+        "total":  1653,
+        "fatal":  295
+    },
+    {
+        "year":  2024,
+        "total":  1667,
+        "fatal":  289
+    },
+    {
+        "year":  2025,
+        "total":  1633,
+        "fatal":  274
+    }
+]

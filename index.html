@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>US Aviation Safety Analytics</title>
+  <meta name="description" content="Historical US aviation accident analytics built from the NTSB Aviation Accident Database." />
+
+  <!-- Plotly draws every chart on this page. Leaflet plus its marker cluster plugin draws the map. -->
+  <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
+  <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- top banner: title, one line description, and a note on where the numbers come from -->
+  <header class="hero">
+    <div class="hero-inner">
+      <h1>US Aviation Safety Analytics</h1>
+      <p class="hero-sub">
+        Eighteen years of US civil aviation accidents, built directly from the NTSB Aviation
+        Accident Database (2008 through 2025).
+      </p>
+      <p class="hero-source">
+        Source: <a href="https://data.ntsb.gov/avdata" target="_blank" rel="noopener">NTSB Aviation Accident Database</a>.
+        All figures below are computed offline from the raw database, not fetched live.
+      </p>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- section 1: how many accidents happened each year, and how many were fatal -->
+    <section class="panel" id="trends">
+      <h2>Accidents per year</h2>
+      <p class="panel-note">Total reported accidents versus accidents with at least one fatality, by year.</p>
+      <div id="chart-year" class="chart chart-wide"></div>
+    </section>
+
+    <!-- section 2: two side by side breakdowns, aircraft category and phase of flight -->
+    <section class="panel-grid">
+      <div class="panel">
+        <h2>Aircraft category</h2>
+        <p class="panel-note">Which kind of aircraft was involved.</p>
+        <div id="chart-type" class="chart"></div>
+      </div>
+      <div class="panel">
+        <h2>Phase of flight</h2>
+        <p class="panel-note">What the aircraft was doing when the accident sequence began.</p>
+        <div id="chart-phase" class="chart"></div>
+      </div>
+    </section>
+
+    <!-- section 3: root cause categories pulled from the NTSB findings for each accident -->
+    <section class="panel" id="causes">
+      <h2>Root cause categories</h2>
+      <p class="panel-note">
+        The top level category of every finding NTSB investigators marked as an actual cause
+        (as opposed to a contributing factor), summed across all accidents in the period.
+      </p>
+      <div id="chart-cause" class="chart chart-wide"></div>
+    </section>
+
+    <!-- section 4: every geocoded accident plotted on a map, clustered and colored by severity -->
+    <section class="panel" id="map-section">
+      <h2>Where accidents happened</h2>
+      <p class="panel-note">
+        Each marker is one accident. Zoom in to break clusters apart. Color shows the highest
+        injury level recorded for that accident.
+      </p>
+      <div id="map" class="chart chart-wide chart-map"></div>
+      <div class="legend" id="map-legend"></div>
+    </section>
+
+    <!-- section 5: wildlife strikes, not built yet because the source data has not been pulled -->
+    <section class="panel placeholder" id="wildlife">
+      <h2>Wildlife strikes</h2>
+      <p class="panel-note">
+        Planned addition using the FAA Wildlife Strike Database (breakdowns by airport, month,
+        and damage severity). That database sits behind a search form rather than a plain
+        download link, so this section will go live once that export is pulled by hand and
+        run through the same processing pipeline as the NTSB data above. See the project
+        README for the exact steps.
+      </p>
+    </section>
+
+    <!-- section 6: ASRS narrative text analytics, also pending a manual data export -->
+    <section class="panel placeholder" id="asrs">
+      <h2>Common contributing factors</h2>
+      <p class="panel-note">
+        Planned addition using de-identified narrative reports from NASA's Aviation Safety
+        Reporting System, summarized as the most frequent contributing factor terms. Also
+        pending a manual export, documented in the README.
+      </p>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>
+      Data: <a href="https://data.ntsb.gov/avdata" target="_blank" rel="noopener">NTSB Aviation Accident Database</a>,
+      2008 through 2025 (the current year is left out of yearly figures since it is still incomplete).
+      Built as a data analytics portfolio project.
+      <a href="https://github.com/" target="_blank" rel="noopener">View source on GitHub</a>.
+    </p>
+  </footer>
+
+  <!-- charts.js and map.js define the drawing functions, main.js loads the data and calls them -->
+  <script src="js/charts.js"></script>
+  <script src="js/map.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+﻿[
+    {
+        "category":  "Personnel issues",
+        "count":  16513
+    },
+    {
+        "category":  "Aircraft",
+        "count":  15951
+    },
+    {
+        "category":  "Environmental issues",
+        "count":  3528
+    },
+    {
+        "category":  "Not determined",
+        "count":  1653
+    },
+    {
+        "category":  "Organizational issues",
+        "count":  116
+    },
+    {
+        "category":  "main system",
+        "count":  3
+    }
+]

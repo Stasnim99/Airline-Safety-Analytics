@@ -1,0 +1,42 @@
+﻿[
+    {
+        "phase":  "Landing",
+        "count":  8584
+    },
+    {
+        "phase":  "Cruise",
+        "count":  5485
+    },
+    {
+        "phase":  "Maneuvering",
+        "count":  3620
+    },
+    {
+        "phase":  "Takeoff",
+        "count":  3400
+    },
+    {
+        "phase":  "Approach",
+        "count":  3277
+    },
+    {
+        "phase":  "Climb",
+        "count":  2806
+    },
+    {
+        "phase":  "Taxi",
+        "count":  908
+    },
+    {
+        "phase":  "Unknown",
+        "count":  638
+    },
+    {
+        "phase":  "Other",
+        "count":  621
+    },
+    {
+        "phase":  "Standing",
+        "count":  405
+    }
+]
