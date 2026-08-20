@@ -7,6 +7,8 @@ the accident map below are computed offline from roughly 31,000 real NTSB record
 fetched from a live API. There is no backend and no build step, just plain HTML, CSS, and
 JavaScript rendering precomputed data.
 
+You can view the website here: https://stasnim99.github.io/Airline-Safety-Analytics/
+
 ## Contents
 
 | File | Description |
