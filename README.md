@@ -1,6 +1,6 @@
 # Aviation Safety Analytics
 
-A static, hand built website analyzing eighteen years of US civil aviation accidents (2008
+A static, hand built website analyzing eighteen years of civil aviation accidents (2008
 through 2025), sourced directly from the **NTSB Aviation Accident Database**. Unlike a live
 flight tracker, this project is built around historical safety analytics: every chart and
 the accident map below are computed offline from roughly 31,000 real NTSB records, not
@@ -37,7 +37,7 @@ points to a genuine safety improvement, not just fewer flights in the air.
 
 Which kind of aircraft was involved, and what the aircraft was doing when the accident
 sequence began. Airplanes account for the large majority of records, consistent with their
-share of overall US civil aviation traffic. Landing is by far the single largest phase of
+share of overall civil aviation traffic. Landing is by far the single largest phase of
 flight, followed by cruise, maneuvering, takeoff, approach, and climb.
 
 **Analytical use:** the phase of flight breakdown pinpoints where in a flight risk actually
