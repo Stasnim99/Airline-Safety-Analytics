@@ -1,4 +1,4 @@
-# US Aviation Safety Analytics
+# Aviation Safety Analytics
 
 A static, hand built website analyzing eighteen years of US civil aviation accidents (2008
 through 2025), sourced directly from the **NTSB Aviation Accident Database**. Unlike a live
